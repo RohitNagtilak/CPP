@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Inheritance">
+      <UniqueIdentifier>{3f137748-59ff-45ab-9828-35e1facbe5c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Structure_Union">
+      <UniqueIdentifier>{31d28fc0-211d-4ef4-a8b0-77f2c3345cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Constructor_Destructor">
+      <UniqueIdentifier>{094331db-1cd0-467e-ab6a-e1595a1bcfbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Function_Overriding">
+      <UniqueIdentifier>{5d107966-5b03-4258-9952-46791e1e4eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Overloading">
+      <UniqueIdentifier>{341c4d4b-4548-489d-a1c2-e9db52718a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Friend">
+      <UniqueIdentifier>{eac71b22-3253-43a2-84cd-8e80ec2325c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Array">
+      <UniqueIdentifier>{8388b90d-3cbf-4467-9caa-31406f169f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmartPointers">
+      <UniqueIdentifier>{ded2699d-bb79-4edd-bb37-270b00a0acac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multithreading">
+      <UniqueIdentifier>{cd07030e-5796-4496-9e32-13897e733fd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multithreading\Way%27s_to_Create">
+      <UniqueIdentifier>{2b30b921-485f-432c-a574-5658287c4382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multithreading\Mutex">
+      <UniqueIdentifier>{93af0ad4-929b-49c0-8bd7-edf6b56c7639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Multithreading\Mutex\Timed_Mutex">
+      <UniqueIdentifier>{78c197fb-dd17-4b05-88bb-e50271d76c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OtherFeatures">
+      <UniqueIdentifier>{b519530e-e8ee-4eb1-87d4-fd949f914198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Casting">
+      <UniqueIdentifier>{6570378f-e5e8-4320-b700-ad879f5d2743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DyanamicMemory">
+      <UniqueIdentifier>{60bcfac5-ef2f-476c-8b19-761b4628820d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExceptionHandling">
+      <UniqueIdentifier>{ea5b3be1-efe3-4100-b7ee-a6bf6fe5fd68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Template">
+      <UniqueIdentifier>{5b3fa7d5-84bb-4019-b22b-b5fa02236d90}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Single.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiple.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Multilevel.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Hierarchical.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Hybrid.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="struct.cpp">
+      <Filter>Source Files\Structure_Union</Filter>
+    </ClCompile>
+    <ClCompile Include="StructInheritance.cpp">
+      <Filter>Source Files\Structure_Union</Filter>
+    </ClCompile>
+    <ClCompile Include="StructWithinStruct.cpp">
+      <Filter>Source Files\Structure_Union</Filter>
+    </ClCompile>
+    <ClCompile Include="Union.cpp">
+      <Filter>Source Files\Structure_Union</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="Virtual_Destructor.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="ShallowCopy.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="DeepCopy.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionOverriding.cpp">
+      <Filter>Source Files\Function_Overriding</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualFunction.cpp">
+      <Filter>Source Files\Function_Overriding</Filter>
+    </ClCompile>
+    <ClCompile Include="PureVirtualFunction.cpp">
+      <Filter>Source Files\Function_Overriding</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Source Files\Overloading</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator.cpp">
+      <Filter>Source Files\Overloading</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendClass.cpp">
+      <Filter>Source Files\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendFunction.cpp">
+      <Filter>Source Files\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivateMemberOutSideClass.cpp">
+      <Filter>Source Files\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleArray.cpp">
+      <Filter>Source Files\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayToFunction.cpp">
+      <Filter>Source Files\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="DanglingPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UniquePtr.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="UniquePtrOwnershipTfr.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedPtr.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Concept.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="CyclicProbWeakPtr.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="WeakPtr.cpp">
+      <Filter>Source Files\SmartPointers</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingFunctionPtr.cpp">
+      <Filter>Source Files\Multithreading\Way%27s_to_Create</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingLambdaFun.cpp">
+      <Filter>Source Files\Multithreading\Way%27s_to_Create</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingFunctor.cpp">
+      <Filter>Source Files\Multithreading\Way%27s_to_Create</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingNonStaticDataMember.cpp">
+      <Filter>Source Files\Multithreading\Way%27s_to_Create</Filter>
+    </ClCompile>
+    <ClCompile Include="UsingStaticDataMember.cpp">
+      <Filter>Source Files\Multithreading\Way%27s_to_Create</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutex.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTryLock.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="ResursiveMutex.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="scoped_lock.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMutexNLLock.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="LockGuard.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="StdTryLock.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTryLockFor.cpp">
+      <Filter>Source Files\Multithreading\Mutex\Timed_Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTryLockUntil.cpp">
+      <Filter>Source Files\Multithreading\Mutex\Timed_Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="ResursiveTimedMutex.cpp">
+      <Filter>Source Files\Multithreading\Mutex</Filter>
+    </ClCompile>
+    <ClCompile Include="Condittional_Variable.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Promise_Future.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="Async.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="DiamondProb.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiple2.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="2DArray.cpp">
+      <Filter>Source Files\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambdas.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="CallByValueRefPtr.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSpecifiers.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionPointer.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="InlineFunction.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultArgument.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointer.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="auto.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="decltype.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializerList.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="Implicit.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="CStyle.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticCast.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="UpDownDyanamicCast.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstCast.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="ReinterpretCast.cpp">
+      <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="malloc.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="calloc.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Realloc.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="New.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Prog.cpp">
+      <Filter>Source Files\ExceptionHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="Class.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="TFunction.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiningPhilosophers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProducerConsumer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
