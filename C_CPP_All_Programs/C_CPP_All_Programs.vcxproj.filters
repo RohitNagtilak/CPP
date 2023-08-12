@@ -309,5 +309,8 @@
     <ClCompile Include="lib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Operator2.cpp">
+      <Filter>Source Files\Overloading</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
