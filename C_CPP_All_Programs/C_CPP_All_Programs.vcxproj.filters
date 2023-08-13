@@ -312,5 +312,8 @@
     <ClCompile Include="Operator2.cpp">
       <Filter>Source Files\Overloading</Filter>
     </ClCompile>
+    <ClCompile Include="ClassForStringCharPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
