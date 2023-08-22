@@ -64,6 +64,9 @@
     <Filter Include="Source Files\Template">
       <UniqueIdentifier>{5b3fa7d5-84bb-4019-b22b-b5fa02236d90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\FileHandling">
+      <UniqueIdentifier>{63ee0c20-5f55-4db7-bbb8-dc9e8bc0367b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Single.cpp">
@@ -285,7 +288,7 @@
     <ClCompile Include="New.cpp">
       <Filter>Source Files\DyanamicMemory</Filter>
     </ClCompile>
-    <ClCompile Include="Prog.cpp">
+    <ClCompile Include="Exception.cpp">
       <Filter>Source Files\ExceptionHandling</Filter>
     </ClCompile>
     <ClCompile Include="Class.cpp">
@@ -314,6 +317,18 @@
     </ClCompile>
     <ClCompile Include="ClassForStringCharPtr.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowStr.cpp">
+      <Filter>Source Files\ExceptionHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="MultipleCatch.cpp">
+      <Filter>Source Files\ExceptionHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="NameSpace.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHandling.cpp">
+      <Filter>Source Files\FileHandling</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
