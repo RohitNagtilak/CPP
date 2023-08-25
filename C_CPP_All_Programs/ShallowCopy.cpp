@@ -1,25 +1,23 @@
 #include<iostream>
 using namespace std;
 
-class Simple
+class Test
 {
 public:
 	int* data;
-	int i;
 };
 
 int main()
 {
-	Simple p;
+	Test p;
 	p.data = new int(10);
-	p.i = 20;
-	cout << "P -> Data= " << *(p.data) << " i= " << p.i<<endl;
+	cout << "P -> Data= " << *(p.data) <<endl;
 
-	Simple q(p);
-	cout << "Q -> Data= " << *(q.data) << " i= " << q.i<<endl;
+	Test q(p);
+	cout << "Q -> Data= " << *(q.data) <<endl;
 
 	*(q.data) = 30;
-	cout << "P -> Data= " << *(p.data) << " i= " << p.i << endl;
-	cout << "Q -> Data= " << *(q.data) << " i= " << q.i<<endl;
+	cout << "P -> Data= " << *(p.data) << endl;
+	cout << "Q -> Data= " << *(q.data) <<endl;
 	return 0;
 }

@@ -3,13 +3,14 @@ using namespace std;
 
 int main()
 {
-	int value = 42;
-	int* intValuePtr = &value;
-	char* charValuePtr = reinterpret_cast<char*>(intValuePtr);
+	int intValue = 65;
+	char* charPointer = reinterpret_cast<char*>(&intValue);
 
-	int value1 = 42;
-	intptr_t intValueAsIntPtr1 = reinterpret_cast<intptr_t>(&value1);
-	int* intValuePtr1 = reinterpret_cast<int*>(intValueAsIntPtr1);
-
+	cout << charPointer;
 	return 0;
 }
+
+//reinterpret_cast is a casting operator used to convert one pointer type to another,
+//even if they are unrelated.
+//It's often used for low-level bit manipulation or to treat memory as a different type. 
+//However, it should be used with caution due to potential undefined behavior.

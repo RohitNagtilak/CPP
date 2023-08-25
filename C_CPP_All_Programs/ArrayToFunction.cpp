@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 void DisplayArray(int* arr, int size)
 {
 	cout << "Array elements are :" << endl;
@@ -8,6 +9,7 @@ void DisplayArray(int* arr, int size)
 		cout << " " << *(arr + i) << endl;
 	}
 }
+
 int main()
 {
 	int size;

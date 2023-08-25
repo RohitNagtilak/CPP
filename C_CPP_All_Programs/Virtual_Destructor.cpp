@@ -25,6 +25,7 @@ public:
 		cout << "Child Destructor Callled."<<endl;
 	}
 };
+
 int main()
 {
 	Parent* p;

@@ -96,7 +96,7 @@
     <ClCompile Include="Union.cpp">
       <Filter>Source Files\Structure_Union</Filter>
     </ClCompile>
-    <ClCompile Include="Simple.cpp">
+    <ClCompile Include="InvokeDestroy.cpp">
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
     <ClCompile Include="Types.cpp">
@@ -106,9 +106,6 @@
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
     <ClCompile Include="ShallowCopy.cpp">
-      <Filter>Source Files\Constructor_Destructor</Filter>
-    </ClCompile>
-    <ClCompile Include="DeepCopy.cpp">
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
     <ClCompile Include="FunctionOverriding.cpp">
@@ -329,6 +326,12 @@
     </ClCompile>
     <ClCompile Include="FileHandling.cpp">
       <Filter>Source Files\FileHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="DeepCopy.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadMe.txt">
+      <Filter>Source Files\Casting</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

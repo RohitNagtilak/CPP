@@ -15,7 +15,6 @@ void DiplayLetters()
 
 int main()
 {
-
 	thread t1(DiplayNumber);
 	thread t2(DiplayLetters);
 

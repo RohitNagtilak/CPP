@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-class Simple
+class Test
 {
 public:
-	Simple()
+	Test()
 	{
 		cout << "Constructor Called." << endl;
 	}
-	~Simple()
+	~Test()
 	{
 		cout << "Destructor Called." << endl;
 	}
@@ -16,9 +16,11 @@ public:
 
 int main()
 {
-	Simple s;
-	Simple *s1 = new Simple();
-	unique_ptr<Simple> s2(new Simple());
+	Test s;
+	
+	Test *s1 = new Test();
 	delete s1;
+	
+	unique_ptr<Test> s2(new Test());
 	return 0;
 }

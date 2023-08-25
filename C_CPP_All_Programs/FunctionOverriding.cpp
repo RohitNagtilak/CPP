@@ -3,7 +3,7 @@ using namespace std;
 class Parent
 {
 public:
-	/*virtual*/ void Display()
+	virtual void Display()
 	{
 		cout << "Parent Called."<<endl;
 	}
@@ -12,10 +12,10 @@ public:
 class Child : public Parent
 {
 public:
-	//void Display() /*override*/
-	//{
-	//	cout << "Child Called." << endl;
-	//}
+	void Display() /*override*/
+	{
+		cout << "Child Called." << endl;
+	}
 };
 
 int main()

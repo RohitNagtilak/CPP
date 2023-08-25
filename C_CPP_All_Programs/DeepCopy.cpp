@@ -1,64 +1,30 @@
 #include<iostream>
 using namespace std;
-class DeepCpy
+
+class Test
 {
 public:
-	DeepCpy();
-	DeepCpy(int);
-	DeepCpy(DeepCpy&);
-	~DeepCpy();
-	void Display();
-	void SetValue(int);
+	int* data;
+	Test(){}
 
-private:
-	int* a = new int;
+	Test(Test &obj)
+	{
+		this->data = new int;
+		*(this->data) = *(obj.data);
+	}
 };
-
-DeepCpy::DeepCpy()
-{
-}
-
-DeepCpy::DeepCpy(int a)
-{
-	*(this->a) = a;
-}
-
-DeepCpy::DeepCpy(DeepCpy& obj1)
-{
-	cout << "DeepCpy constructor called" << endl;
-	this->a = new int;
-	*(this->a) = *obj1.a;
-}
-
-DeepCpy::~DeepCpy()
-{
-	delete a;
-}
-
-void DeepCpy::Display()
-{
-	cout << " Value of  a =" << *(this->a) << endl;
-}
-
-void DeepCpy::SetValue(int a)
-{
-	*(this->a) = a;
-}
 
 int main()
 {
-	DeepCpy Obj1(10);
-	cout << "Obj1:" << endl;
-	Obj1.Display();
+	Test p;
+	p.data = new int(10);
+	cout << "P -> Data= " << *(p.data) << endl;
 
-	cout << "Obj2:" << endl;
-	DeepCpy Obj2(Obj1);
-	Obj2.Display();
+	Test q(p);
+	cout << "Q -> Data= " << *(q.data) << endl;
 
-	Obj2.SetValue(20);
-	cout << "Obj2:" << endl;
-	Obj2.Display();
-
-	cout << "Obj1:" << endl;
-	Obj1.Display();
+	*(q.data) = 30;
+	cout << "P -> Data= " << *(p.data) << endl;
+	cout << "Q -> Data= " << *(q.data) << endl;
+	return 0;
 }

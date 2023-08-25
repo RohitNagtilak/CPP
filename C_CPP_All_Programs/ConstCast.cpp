@@ -1,3 +1,6 @@
+//const_cast is a type of type casting operator that is used
+//to add or remove the const qualifier from a variable.
+
 #include<iostream>
 using namespace std;
 
