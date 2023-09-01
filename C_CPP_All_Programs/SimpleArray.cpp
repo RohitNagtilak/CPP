@@ -20,17 +20,5 @@ int main()
 		cout<<" "<< * (arr + i)<<endl;
 	}
 
-	int arr1[2];
-	cout << "Enter " << 2 << " Elements : " << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cin >> arr1[i];
-	}
-	cout << "Entered Elements are :" << endl;
-	for (int i = 0; i < 2; i++)
-	{
-		cout << " " << arr1[i]<< endl;
-	}
-	
 	return 0;
 }

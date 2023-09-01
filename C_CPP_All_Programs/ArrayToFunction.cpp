@@ -6,7 +6,7 @@ void DisplayArray(int* arr, int size)
 	cout << "Array elements are :" << endl;
 	for (int i = 0; i < size; i++)
 	{
-		cout << " " << *(arr + i) << endl;
+		cout << " " << *(arr + i) << endl; //cout << " " << arr[i] << endl; 
 	}
 }
 
@@ -20,7 +20,7 @@ int main()
 	
 	for (int i=0; i < size; i++)
 	{
-		cin >> *(arr + i);
+		cin >> *(arr + i); //cin >> arr[i];
 	}
 	
 	DisplayArray(arr, size);

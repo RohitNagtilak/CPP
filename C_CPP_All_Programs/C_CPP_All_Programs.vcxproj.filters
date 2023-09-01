@@ -99,9 +99,6 @@
     <ClCompile Include="InvokeDestroy.cpp">
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
-    <ClCompile Include="Types.cpp">
-      <Filter>Source Files\Constructor_Destructor</Filter>
-    </ClCompile>
     <ClCompile Include="Virtual_Destructor.cpp">
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
@@ -332,6 +329,9 @@
     </ClCompile>
     <ClCompile Include="ReadMe.txt">
       <Filter>Source Files\Casting</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
