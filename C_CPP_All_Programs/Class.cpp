@@ -2,7 +2,8 @@
 
 // Template class for a generic Pair
 template <typename T1, typename T2>
-class Pair {
+class Pair 
+{
 private:
     T1 first;
     T2 second;

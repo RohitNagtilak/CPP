@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+template <typename T>
 class MyPtrClass
 {
 public:
@@ -9,27 +9,36 @@ public:
 		data = nullptr;
 	}
 
-	MyPtrClass(int *p)
+	MyPtrClass(T *p)
 	{
+		cout << "\nConstructor Called\n";
 		data = p;
 	}
 	
 	~MyPtrClass()
 	{
+		cout << "\nDestructor Called\n";
 		delete data;
 	}
 
-	int& operator*()
+	T& operator*()
 	{
 		return *data;
 	}
 private:
-	int* data;
+	T* data;
 };
+
 int main()
 {
-	int* ptr = new int(5);
-	MyPtrClass p = MyPtrClass(ptr);
-	cout << "Value " << *p;
+	MyPtrClass<string> strPtr(new string("Rohit"));
+	cout << "Value is :" << *strPtr;
+
+	MyPtrClass<int> intPtr(new int(10));
+	cout << "Value is :" << *intPtr;
+
+	MyPtrClass<double> doublePtr(new double(1.5));
+	cout << "Value is :" << *doublePtr;
+
 	return 0;
 }
