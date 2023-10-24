@@ -31,7 +31,6 @@ int main()
 	cout << "Substraction is : " << fptr(20, 10) << endl;
 
 	string(*fptr1)() = Disp;
-
 	Display(fptr1);
 
 	return 0;

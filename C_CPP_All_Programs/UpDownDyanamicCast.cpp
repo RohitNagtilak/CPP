@@ -1,43 +1,39 @@
-//
-#include<iostream>
-using namespace std;
-class Base 
+#include <iostream>
+
+class Animal 
 {
 public:
-    virtual ~Base() {}
+    virtual void speak() {
+        std::cout << "Animal speaks." << std::endl;
+    }
 };
 
-class Derived : public Base 
+class Dog : public Animal
 {
 public:
-    void print() 
+    void speak() override
     {
-        std::cout << "Derived class" << std::endl;
+        std::cout << "Dog barks." << std::endl;
     }
 };
 
 int main()
 {
-    //Downcasting (Derived to Base)
-    Base* basePtr = new Derived();
-    Derived* derivedPtr = dynamic_cast<Derived*>(basePtr);
-    if (derivedPtr)
+    Animal* animal = new Dog();
+    // Upcasting: Converting a Dog pointer to an Animal pointer
+    animal->speak(); // Calls the Dog's speak method
+
+    // Attempting downcasting using dynamic_cast
+    Dog* dog = dynamic_cast<Dog*>(animal);
+    if (dog)
     {
-        derivedPtr->print();
+        std::cout << "Downcasting successful:" << std::endl;
     }
     else
     {
-        std::cout << "Downcast failed." << std::endl;
+        std::cout << "Downcasting failed." << std::endl;
     }
-
-    //Upcasting (Base to Derived)
-    Base* basePtr1 = new Derived();
-    Base* upcastPtr = dynamic_cast<Base*>(basePtr1);
-    if (upcastPtr) 
-    {
-        // The upcast will always succeed
-        std::cout << "Upcast succeeded." << std::endl;
-    }
+    delete animal;
     return 0;
 }
 

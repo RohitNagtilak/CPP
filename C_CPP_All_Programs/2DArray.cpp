@@ -4,9 +4,11 @@ int main()
 {
     int arr[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
     
-    int* ptr;
-    ptr = &arr[0][0];  // *ptr = *arr;
+    /*int* ptr;
+    ptr = &arr[0][0];*/
 
+    int* ptr = &arr[0][0];
+    
     cout << "\nUsing Pointer :" << endl;
     for (int i = 0; i < 3; i++)
     {

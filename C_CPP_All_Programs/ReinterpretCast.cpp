@@ -12,5 +12,5 @@ int main()
 
 //reinterpret_cast is a casting operator used to convert one pointer type to another,
 //even if they are unrelated.
-//It's often used for low-level bit manipulation or to treat memory as a different type. 
+//It's often used for low-level bit manipulation or to treat memory as a different type.
 //However, it should be used with caution due to potential undefined behavior.

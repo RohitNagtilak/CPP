@@ -11,9 +11,9 @@ public:
 	Simple(Simple&);
 };
 
-Simple::Simple() :x{0}
+Simple::Simple() :x{ 0 }
 {
-	cout << "Default Constructor Called. X = "<< x << endl;
+	cout << "Default Constructor Called. X = " << x << endl;
 }
 
 Simple::~Simple()
@@ -24,15 +24,15 @@ Simple::~Simple()
 Simple::Simple(int x)
 {
 	this->x = x;
-	cout << "Parameterized Constructor Called. X = "<< x << endl;
+	cout << "Parameterized Constructor Called. X = " << x << endl;
 }
 
 //Shallow Copy constructor
 //
-Simple::Simple(Simple &temp)
+Simple::Simple(Simple& temp)
 {
 	this->x = temp.x;
-	cout << "Copy Constructor Called. x = "<< x << endl;
+	cout << "Copy Constructor Called. x = " << x << endl;
 }
 
 int main()

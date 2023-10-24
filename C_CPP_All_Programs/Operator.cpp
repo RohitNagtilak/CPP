@@ -5,7 +5,7 @@ class Number
 {
 	int num;
 public:
-
+	Number(){}
 	Number(int num)
 	{
 		this->num = num;
@@ -15,10 +15,10 @@ public:
 	{
 		return this->num + obj.num;
 	}
-	
+
 	void Display()
 	{
-		cout << "Number is :" << num<<endl;
+		cout << "Number is : " << num << endl;
 	}
 };
 
@@ -29,9 +29,9 @@ int main()
 
 	Number b(20);
 	b.Display();
-	
+
 	Number c = a + b;
 	c.Display();
-	
+
 	return 0;
 }

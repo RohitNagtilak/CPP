@@ -1,5 +1,10 @@
-#include <iostream>
+//A Singleton is a design pattern that ensures a class has only one instance and provides a global point of access to that instance.
+//This pattern is commonly used when you want to restrict the instantiation of a class to a single object. 
+//Singleton is widely used for logging, configuration settings, database connections,
+//and other scenarios where having multiple instances would be undesirable.
 
+#include <iostream>
+using namespace std;
 class Singleton 
 {
 public:
@@ -19,7 +24,7 @@ public:
     // Other public member functions
     void showMessage() 
     {
-        std::cout << "Hello from Singleton!" << std::endl;
+        cout << "Hello from Singleton!" << endl;
     }
 
 private:
@@ -37,9 +42,3 @@ int main()
 
     return 0;
 }
-
-/*
-In C++, a Singleton is a design pattern that ensures a class has only one instance and provides a global point of access to that instance.
-This pattern is commonly used when you want to restrict the instantiation of a class to a single object. 
-Singleton is widely used for logging, configuration settings, database connections, and other scenarios where having multiple instances would be undesirable.
-*/

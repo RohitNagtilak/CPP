@@ -13,7 +13,7 @@ void DisplayArray(int* arr, int size)
 int main()
 {
 	int size;
-	cout << "Enter Number of element :";
+	cout << "Enter Number of element : ";
 	cin >> size;
 
 	int* arr = new int[size];
@@ -24,6 +24,10 @@ int main()
 	}
 	
 	DisplayArray(arr, size);
+
+	cout << endl;
+	int a[2][3] = { { 1,2,3},{4,5,6} };
+	DisplayArray(&a[0][0], sizeof(a) / sizeof(a[0][0]));
 
 	return 0;
 }

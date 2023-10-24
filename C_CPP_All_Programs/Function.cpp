@@ -24,8 +24,8 @@ class Addition
 int main()
 {
 	Addition a;
-	cout << "Addition is " << a.Add(5, 3)<<endl;
-	cout << "Addition is " << a.Add(5.3, 3.4)<<endl;
-	cout << "Addition is " << a.Add("Rohit ", "Nagtilak");
+	cout << " Addition is " << a.Add(5, 3) << endl;
+	cout << " Addition is " << a.Add(5.3, 3.4) << endl;
+	cout << " Addition is " << a.Add("Rohit ", "Nagtilak");
 	return 0;
 }

@@ -126,7 +126,7 @@
     <ClCompile Include="FriendFunction.cpp">
       <Filter>Source Files\Friend</Filter>
     </ClCompile>
-    <ClCompile Include="PrivateMemberOutSideClass.cpp">
+    <ClCompile Include="SimpleFriendFunction.cpp">
       <Filter>Source Files\Friend</Filter>
     </ClCompile>
     <ClCompile Include="SimpleArray.cpp">
@@ -225,7 +225,7 @@
     <ClCompile Include="Lambdas.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
-    <ClCompile Include="CallByValueRefPtr.cpp">
+    <ClCompile Include="CallByValueRefNPtr.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
     <ClCompile Include="AccessSpecifiers.cpp">
@@ -306,9 +306,6 @@
     <ClCompile Include="lib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Operator2.cpp">
-      <Filter>Source Files\Overloading</Filter>
-    </ClCompile>
     <ClCompile Include="ClassForStringCharPtr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -330,8 +327,11 @@
     <ClCompile Include="ReadMe.txt">
       <Filter>Source Files\Casting</Filter>
     </ClCompile>
-    <ClCompile Include="Types.cpp">
-      <Filter>Source Files\DyanamicMemory</Filter>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TypesOfConstructor.cpp">
+      <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
