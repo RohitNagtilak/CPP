@@ -1,3 +1,5 @@
+//An array is a collection of elements of the same data type stored in contiguous memory locations. 
+//It is a fundamental data structure that allows you to store and manipulate a fixed number of elements.
 #include<iostream>
 using namespace std;
 
@@ -17,17 +19,14 @@ int main()
 	cin >> size;
 
 	int* arr = new int[size];
-	
-	for (int i=0; i < size; i++)
+
+	for (int i = 0; i < size; i++)
 	{
 		cin >> *(arr + i); //cin >> arr[i];
 	}
-	
 	DisplayArray(arr, size);
-
-	cout << endl;
-	int a[2][3] = { { 1,2,3},{4,5,6} };
-	DisplayArray(&a[0][0], sizeof(a) / sizeof(a[0][0]));
+	//or DisplayArray(arr, size);
+	delete[] arr;
 
 	return 0;
 }

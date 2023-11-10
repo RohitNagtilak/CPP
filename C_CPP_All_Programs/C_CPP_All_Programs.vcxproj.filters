@@ -129,9 +129,6 @@
     <ClCompile Include="SimpleFriendFunction.cpp">
       <Filter>Source Files\Friend</Filter>
     </ClCompile>
-    <ClCompile Include="SimpleArray.cpp">
-      <Filter>Source Files\Array</Filter>
-    </ClCompile>
     <ClCompile Include="ArrayToFunction.cpp">
       <Filter>Source Files\Array</Filter>
     </ClCompile>

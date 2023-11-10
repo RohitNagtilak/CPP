@@ -1,7 +1,8 @@
 |- Implicit Casting (Automatic Casting)
+|
 |- Explicit Casting (Manual Casting)
    Explicit casting is performed manually by the programmer using casting operators.
-   |-CStyle casting 
+   |-CStyle casting
    |-static_cast      : Used for most ordinary type conversions that don't involve pointers or
    |                    classes with base classes.
    |-dynamic_cast     : Used for performing type-safe downcasting in polymorphic class hierarchies.

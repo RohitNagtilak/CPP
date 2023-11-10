@@ -36,7 +36,7 @@ int main()
 
 	MyPtrClass<int> intPtr(new int(10));
 	cout << "Value is :" << *intPtr;
-
+													
 	MyPtrClass<double> doublePtr(new double(1.5));
 	cout << "Value is :" << *doublePtr;
 

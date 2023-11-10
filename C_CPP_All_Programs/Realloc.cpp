@@ -10,7 +10,7 @@ int main()
     cin >> n;
 
     int* arr1 = (int*)malloc(n * sizeof(int));
-    if (arr1 == nullptr) 
+    if (arr1 == nullptr)
     {
         cout << "Memory allocation using malloc failed!" << endl;
         return 1;
@@ -33,8 +33,11 @@ int main()
     if (arr3 == nullptr)
     {
         cout << "Memory reallocation using realloc failed!" << endl;
+        free(arr1); // Free the original memory block
         return 1;
     }
+    for (int i = n; i < m; i++)
+        arr3[i] = i + 1;
 
     cout << "Memory reallocated using realloc:" << endl;
     for (int i = 0; i < m; i++)

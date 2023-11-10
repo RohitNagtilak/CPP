@@ -30,6 +30,6 @@ int main()
 	std::unique_ptr<Sample> ptr = std::make_unique<Sample>();
 	ptr->Display();
 
-	// ptr is automatically deleted when it goes out of scopess
+	// ptr is automatically deleted when it goes out of scope
 	return 0;
 }

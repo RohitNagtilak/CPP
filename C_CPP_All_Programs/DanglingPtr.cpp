@@ -44,7 +44,7 @@ int main()
 		int i = 30;
 		pr = &i;
 	}
-	//Ponter is now dangling pointer
+	//Pointer is now dangling pointer
 	cout << "*pr =" << *pr;
 
 	return 0;

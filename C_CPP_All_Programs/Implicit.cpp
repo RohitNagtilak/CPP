@@ -16,7 +16,7 @@ int main()
 	if (num)
 	{
 		// num is implicitly converted to a boolean value
-		std::cout << "The number is non-zero." << std::endl;
+		cout << "The number is non-zero." <<endl;
 	}
 
 	return 0;

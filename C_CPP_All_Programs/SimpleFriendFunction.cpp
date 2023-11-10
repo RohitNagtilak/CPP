@@ -11,7 +11,7 @@ private:
 
 void Display(A& obj)
 {
-	cout << "Data = " << obj.privatedata << endl;
+	cout << "Data = " << obj.privatedata   << endl;
 	cout << "Data = " << obj.protectedData << endl;
 }
 

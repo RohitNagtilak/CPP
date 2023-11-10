@@ -5,31 +5,30 @@ class Parent
 public:
 	Parent()
 	{
-		cout << "Parent Constructor Called"<<endl;
+		cout << "Parent Constructor Called" << endl;
 	}
 	virtual ~Parent() //if we don't make virtual then child destructor will not called.
 	{
-		cout << "Parent Destructor Callled."<<endl;
+		cout << "Parent Destructor Called." << endl;
 	}
 };
 
-class Child:public Parent
+class Child :public Parent
 {
 public:
 	Child()
 	{
-		cout << "Child Constructor Callled."<<endl;
+		cout << "Child Constructor Called." << endl;
 	}
 	~Child()
 	{
-		cout << "Child Destructor Callled."<<endl;
+		cout << "Child Destructor Called." << endl;
 	}
 };
 
 int main()
 {
-	Parent* p;
-	p = new Child();
+	Parent* p = new Child();
 	delete p;
 	return 0;
 }

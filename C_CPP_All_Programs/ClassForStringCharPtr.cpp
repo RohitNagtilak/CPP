@@ -53,7 +53,6 @@ public:
 
 private:
 	char* str;
-
 };
 
 int main()
