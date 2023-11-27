@@ -1,13 +1,13 @@
 #include<iostream>
 #include<thread>
 using namespace std;
-void DiplayNumber()
+void DisplayNumber()
 {
 	for (int i = 0; i < 26; i++)
 		cout << " " << i <<endl ;
 }
 
-void DiplayLetters()
+void DisplayLetters()
 {
 	for (char i = 'A'; i <='Z'; i++)
 		cout << " " << i << endl;
@@ -15,8 +15,8 @@ void DiplayLetters()
 
 int main()
 {
-	thread t1(DiplayNumber);
-	thread t2(DiplayLetters);
+	thread t1(DisplayNumber);
+	thread t2(DisplayLetters);
 
 	t1.join();
 	t2.join();

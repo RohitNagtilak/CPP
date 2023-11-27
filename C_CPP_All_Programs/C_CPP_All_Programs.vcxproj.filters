@@ -330,5 +330,11 @@
     <ClCompile Include="TypesOfConstructor.cpp">
       <Filter>Source Files\Constructor_Destructor</Filter>
     </ClCompile>
+    <ClCompile Include="StaticMemberNMethod.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="RTTI.cpp">
+      <Filter>Source Files\OtherFeatures</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

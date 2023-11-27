@@ -1,3 +1,4 @@
+//
 //A Singleton is a design pattern that ensures a class has only one instance and provides a global point of access to that instance.
 //This pattern is commonly used when you want to restrict the instantiation of a class to a single object. 
 //Singleton is widely used for logging, configuration settings, database connections,

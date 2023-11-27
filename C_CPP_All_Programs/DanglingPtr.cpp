@@ -1,3 +1,6 @@
+//Deallocation of memory.
+//Returning local variable in function call.
+//Variable going out of scope
 #include<iostream>
 using namespace std;
 
@@ -22,7 +25,7 @@ int main()
 	free(ptr);
 	delete ptr1;
 
-	//Pointers are no longer danling pointers
+	//Pointers are no longer dangling pointers
 	ptr = ptr1 = NULL;
 
 	if (ptr != NULL && ptr1 != NULL)
