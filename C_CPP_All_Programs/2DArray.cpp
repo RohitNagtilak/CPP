@@ -36,7 +36,5 @@ int main()
         cout << " " << *ptr;
         ptr++;
     }
-
-
     return 0;
 }

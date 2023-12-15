@@ -7,7 +7,7 @@ public:
 	MyString():str(nullptr){}
 
 	MyString(const char* str)
-	{	
+	{
 		if (str != nullptr)
 		{
 			this->str = new char[strlen(str) + 1];
@@ -27,7 +27,7 @@ public:
 		if (obj.str != nullptr)
 		{
 			this->str = new char[strlen(obj.str) + 1];
-			strcpy_s(this->str, strlen(str) + 1, obj.str);
+			strcpy_s(this->str, strlen(obj.str) + 1, obj.str);
 		}
 		else
 			this->str = nullptr;

@@ -6,11 +6,11 @@
 
 #include <iostream>
 using namespace std;
-class Singleton 
+class Singleton
 {
 public:
     // Static method to access the instance
-    static Singleton& getInstance() 
+    static Singleton& getInstance()
     {
         // This is a C++11 thread-safe way to create a Singleton
         // The instance is created on the first call to getInstance()
