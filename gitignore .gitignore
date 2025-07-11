@@ -18,8 +18,8 @@
 *.VC.VC.opendb
 
 # Visual Studio folders
-.vs/
-Debug/
-Release/
-x64/
-ipch/
+*.vs
+Debug
+Release
+x64
+ipch
