@@ -336,5 +336,8 @@
     <ClCompile Include="RTTI.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
+    <ClCompile Include="NULL_VS_nullptr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
