@@ -1,3 +1,4 @@
+.vs/
 # Build results
 *.obj
 *.exe
@@ -24,4 +25,3 @@
 /x64
 /ipch
 
-.vs/
