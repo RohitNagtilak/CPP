@@ -1,4 +1,5 @@
-C_CPP_All_Programs/.vs/
+C_CPP_All_Programs/ .vs/
+.vs/
 # Build results
 *.obj
 *.exe
@@ -19,7 +20,7 @@ C_CPP_All_Programs/.vs/
 *.VC.VC.opendb
 
 # Visual Studio folders
-/.vs
+*.vs/
 /Debug
 /Release
 /x64
