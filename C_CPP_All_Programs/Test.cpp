@@ -1,43 +1,76 @@
-/*
-Why is NULL Ambiguous?
-•	NULL is typically defined as 0 (an integer constant).
-•	When calling overloaded functions that accept both an integer and a pointer, passing NULL can confuse the compiler, as it matches both signatures.
-•	This can lead to compilation errors or unexpected behavior.
-
-Why is nullptr Not Ambiguous ?
-•	nullptr (introduced in C++11) is a keyword representing a null pointer constant.
-•	It has its own type(std::nullptr_t) and only matches pointer overloads, not integers.
-•	This removes ambiguity and makes code safer and clearer.
-*/
-
+ï»¿// range_based_for_examples.cpp
 #include <iostream>
+#include <vector>
+#include <array>
+#include <map>
 using namespace std;
 
-class Node
-{
-public:
-    int data;
-    Node* next;
-    Node() : data(0), next(nullptr) {}
-};
+int main() {
 
-void func(int n)
-{
-    cout << "Called func(int)" << endl;
-}
+    // 1. Vector â€“ basic range-based for
+    vector<int> v = { 1, 2, 3, 4 };
+    cout << "Vector (copy values): ";
+    for (int x : v) {          // copies each element
+        cout << x << " ";
+    }
+    cout << "\n";
 
-void func(Node* ptr)
-{
-    cout << "Called func(Node*)" << endl;
-}
+    // 2. Vector â€“ modify elements using reference
+    cout << "Vector (modified by reference): ";
+    for (int& x : v) {         // reference â†’ no copy, allows modification
+        x *= 2;
+    }
+    for (int x : v) {
+        cout << x << " ";
+    }
+    cout << "\n";
 
-int main()
-{
-    func(NULL);    
-    // Error: ambiguous call in C++11 and later
-    
-    func(nullptr);
-    // Calls func(Node*), unambiguous
+    // 3. Vector â€“ const reference, no modify
+    cout << "Vector (const reference): ";
+    for (const int& x : v) {   // no copy, safe for read-only
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    // 4. Using auto (recommended)
+    // auto deduces exact type â†’ safer + avoids narrowing + avoids long type names
+    cout << "Vector (auto): ";
+    for (auto& x : v) {        // auto& â†’ avoids copying, efficient for big objects
+        x += 5;
+    }
+    for (auto x : v) {         // auto â†’ correct type deduced
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    // 5. Raw Array example
+    int arr[] = { 10, 20, 30 };
+    cout << "Raw array: ";
+    for (int x : arr) {
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    // 6. std::array example
+    array<int, 3> a = { 100, 200, 300 };
+    cout << "std::array: ";
+    for (auto x : a) {         // auto works perfectly here too
+        cout << x << " ";
+    }
+    cout << "\n";
+
+    // 7. Map with range-based for
+    map<string, int> m = { {"apple", 3}, {"banana", 5}, {"mango", 2} };
+    cout << "Map (key-value):\n";
+    for (const auto& p : m) {  // auto avoids typing pair<const string, int>
+        cout << p.first << ": " << p.second << "\n";
+    }
+
+    // 8. C++17 structured bindings with map
+    cout << "Map (structured bindings):\n";
+    for (const auto& [key, value] : m) {  // auto deduces pair element types
+        cout << key << ": " << value << "\n";
+    }
 
     return 0;
 }

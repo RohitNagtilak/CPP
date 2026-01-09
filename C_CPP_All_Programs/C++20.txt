@@ -1,0 +1,27 @@
+Core Language
+=========================================================================================================
+	Concepts (concept, requires)
+	Ranges (views::filter, views::transform, etc.)
+	Coroutines (co_await, co_yield, co_return)
+	Modules (import, export)
+	Three-way comparison operator (<=>, spaceship operator)
+	Constrained auto (auto x = func(); with concepts)
+	consteval
+	constinit
+	Immediate functions
+	Enhanced constexpr (even std::vector usable in constexpr!)
+	Lambdas in unevaluated contexts
+	Default comparison operators (= default for <=>)
+
+Library
+=========================================================================================================
+	<ranges>
+	New clocks & chrono formatting
+	std::span
+	std::bit_cast
+	std::format
+	std::source_location
+	std::jthread
+	std::stop_token
+	Calendar/timezone library
+	std::atomic_ref

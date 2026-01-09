@@ -1,0 +1,23 @@
+﻿Core Language
+=========================================================================================================
+	if consteval (refinement)
+	Deducing this
+	constexpr improvements (even more types allowed)
+	Literal suffixes for std::string → "text"s
+	Pack-indexing (...[i])
+	Static operator call (obj.operator()())
+	More pattern matching groundwork (not full matching yet)
+
+Library
+=========================================================================================================
+	std::expected
+	std::print / std::println
+	std::mdspan
+	std::flat_map, std::flat_set
+	std::generator (C++23 coroutine generator)
+	std::hive (replacement for deprecated std::pmr::unordered_*)
+	Ranges updates:
+		ranges::to
+		repeat_view, cartesian_product_view
+	Networking (not fully standardized but TS included)
+	std::move_only_function

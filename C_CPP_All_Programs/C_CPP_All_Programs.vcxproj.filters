@@ -67,6 +67,24 @@
     <Filter Include="Source Files\FileHandling">
       <UniqueIdentifier>{63ee0c20-5f55-4db7-bbb8-dc9e8bc0367b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++Versions">
+      <UniqueIdentifier>{5f69a028-e86b-40ee-b9c7-e5088bc90ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++Versions\C++14">
+      <UniqueIdentifier>{a9cc1a17-99a9-41d1-8704-7fbc2f1c9261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++Versions\C++17">
+      <UniqueIdentifier>{6c985493-770f-479c-91b7-540663b17d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++Versions\C++20">
+      <UniqueIdentifier>{00115f8c-0a90-4ca0-ae42-4ae8ee1c9627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++Versions\C++23">
+      <UniqueIdentifier>{51782dfa-2aa4-41b9-976e-1c571710380d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++Versions\C++11">
+      <UniqueIdentifier>{9ca964b0-4895-40de-a53c-fccae8c9e55a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Single.cpp">
@@ -240,12 +258,6 @@
     <ClCompile Include="Pointer.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
-    <ClCompile Include="auto.cpp">
-      <Filter>Source Files\OtherFeatures</Filter>
-    </ClCompile>
-    <ClCompile Include="decltype.cpp">
-      <Filter>Source Files\OtherFeatures</Filter>
-    </ClCompile>
     <ClCompile Include="InitializerList.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
@@ -339,5 +351,31 @@
     <ClCompile Include="NULL_VS_nullptr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="auto.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="decltype.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="range_based_for.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="C++11.txt">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </Text>
+    <Text Include="C++14.txt">
+      <Filter>Source Files\C++Versions\C++14</Filter>
+    </Text>
+    <Text Include="C++17.txt">
+      <Filter>Source Files\C++Versions\C++17</Filter>
+    </Text>
+    <Text Include="C++20.txt">
+      <Filter>Source Files\C++Versions\C++20</Filter>
+    </Text>
+    <Text Include="C++23.txt">
+      <Filter>Source Files\C++Versions\C++23</Filter>
+    </Text>
   </ItemGroup>
 </Project>

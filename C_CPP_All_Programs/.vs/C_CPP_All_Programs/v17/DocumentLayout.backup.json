@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B11.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\ClassForStringCharPtr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:ClassForStringCharPtr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Test.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp",
+              "RelativeDocumentMoniker": "Test.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp",
+              "RelativeToolTip": "Test.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-11T14:02:23.818Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "C\u002B\u002B11.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B11.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt",
+              "RelativeToolTip": "C\u002B\u002B11.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-11T14:17:48.216Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassForStringCharPtr.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\ClassForStringCharPtr.cpp",
+              "RelativeDocumentMoniker": "ClassForStringCharPtr.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\ClassForStringCharPtr.cpp",
+              "RelativeToolTip": "ClassForStringCharPtr.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-11T14:13:24.608Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

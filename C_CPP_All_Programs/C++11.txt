@@ -1,0 +1,33 @@
+﻿Core Language
+=========================================================================================================
+	✅ auto
+	✅ decltype
+	✅ Range-based for loop
+	Rvalue references (T&&)
+	Move semantics
+	Uniform initialization {}
+	nullptr
+	Strongly-typed enums (enum class)
+	Lambda expressions
+	Variadic templates
+	static_assert
+	constexpr
+	Deleted/defaulted functions (= delete, = default)
+	Delegating constructors
+	Inheriting constructors
+	override, final
+	Long long (long long int)
+	Unicode string literals (u8, u, U, L)
+
+Library
+=========================================================================================================
+	Smart pointers: unique_ptr, shared_ptr, weak_ptr
+	Thread library: std::thread, std::mutex, std::lock_guard, std::unique_lock, std::condition_variable
+	std::async, std::future, std::promise
+	std::atomic
+	<chrono>
+	<regex>
+	<random>
+	New containers: std::array, std::forward_list, unordered_map/set
+	Tuples
+	std::function, std::bind

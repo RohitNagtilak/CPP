@@ -1,0 +1,16 @@
+﻿Core Language
+=========================================================================================================
+	Binary literals (0b1010)
+	Digit separators (1'000'000)
+	Generic lambdas (auto in lambda params)
+	Lambda capture by move ([x = std::move(v)])
+	Return type deduction for normal functions
+	Relaxed constexpr restrictions
+
+Library
+=========================================================================================================
+	std::make_unique
+	std::shared_timed_mutex
+	[[deprecated]] attribute
+	std::integer_sequence
+	std::exchange
