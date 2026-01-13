@@ -85,6 +85,9 @@
     <Filter Include="Source Files\C++Versions\C++11">
       <UniqueIdentifier>{9ca964b0-4895-40de-a53c-fccae8c9e55a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{14e46b82-f48a-4907-8c4c-9a54b4afb0b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Single.cpp">
@@ -359,6 +362,9 @@
     </ClCompile>
     <ClCompile Include="range_based_for.cpp">
       <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerVsReference.cpp">
+      <Filter>Source Files\Other</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,2 +1,2 @@
 ﻿  Test.cpp
-  C_CPP_All_Programs.vcxproj -> E:\Git_Sync_Code\CPP\CPP\C_CPP_All_Programs\x64\Debug\C_CPP_All_Programs.exe
+E:\Git_Sync_Code\CPP\CPP\C_CPP_All_Programs\Test.cpp(4,1): error C1189: #error:  Not using C++17 or later
