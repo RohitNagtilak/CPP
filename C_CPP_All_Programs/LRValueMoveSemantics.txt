@@ -1,0 +1,79 @@
+﻿lvalue
+=======
+	An lvalue is an expression that has a name, refers to a persistent memory location, and can appear on the left-hand side of an assignment.
+	int x = 10;   // x is lvalue
+	x = 20;      // valid
+
+rvalue
+=======
+	An rvalue is a temporary object that has no persistent memory location and cannot appear on the left-hand side of an assignment.
+	int y = 10 + 5;   // (10 + 5) is rvalue
+
+ lvalue vs rvalue references
+ ===========================
+	 -------------------------------------- 
+	| Type             | Syntax | Binds to |
+	| ---------------- | ------ | -------- |
+	| lvalue reference | `T&`   | lvalues  |
+	| rvalue reference | `T&&`  | rvalues  |
+	 -------------------------------------- 
+
+Code
+===== 
+	int a = 10;
+	int& lref = a;        // OK
+	int&& rref = 10;      // OK
+
+	// int&& err = a;     // ❌ lvalue cannot bind to rvalue ref
+
+Move semantics
+==============
+	
+	Move semantics allows transfer of ownership of resources (heap memory, file handles, sockets) from a temporary object instead of copying them.
+	Copy = duplicate
+	Move = transfer
+
+	Why needed?
+	Copying dynamic memory is slow
+	Temporary objects don’t need copying
+	Move semantics improves performance
+
+std::move
+==========
+	Converts an lvalue into rvalue
+	Does not move anything
+
+	Test b = std::move(a);  // enables move
+
+Rule of 5
+=========
+If your class manages resources, implement:
+	1. Destructor
+	2. Copy constructor
+	3. Copy assignment
+	4. Move constructor
+	5. Move assignment
+
+	📌 Code Skeleton
+	class Test
+	{
+		public:
+			Test();                             // ctor
+			~Test();                            // destructor
+			Test(const Test&);                  // copy ctor
+			Test& operator=(const Test&);       // copy assign
+			Test(Test&&);                       // move ctor
+			Test& operator=(Test&&);            // move assign
+	};
+
+
+One-Page Summary
+=================
+	lvalue  → named object
+	rvalue  → temporary object
+	T&      → lvalue reference
+	T&&     → rvalue reference
+	std::move → casts to rvalue
+	Move ctor → create from rvalue
+	Move assign → assign from rvalue
+	Rule of 5 → resource safety

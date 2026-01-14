@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\2DArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:2DArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B23.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B23.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B20.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B20.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B17.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B17.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B14.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B14.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:C\u002B\u002B11.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:Test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\UnicodeString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:UnicodeString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\LongLong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:LongLong.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\OverrideFinal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:OverrideFinal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\InheritingConstructors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:InheritingConstructors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\DelegatingConstructors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{48D6BCD4-6BF2-4443-A15A-84FA5E46D6BC}|C_CPP_All_Programs.vcxproj|solutionrelative:DelegatingConstructors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,16 +58,70 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Test.cpp",
               "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp",
               "RelativeDocumentMoniker": "Test.cpp",
               "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\Test.cpp",
               "RelativeToolTip": "Test.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-11T10:04:49.029Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "C\u002B\u002B11.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B11.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B11.txt",
+              "RelativeToolTip": "C\u002B\u002B11.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-14T04:26:38.954Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "C\u002B\u002B23.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B23.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B23.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B23.txt",
+              "RelativeToolTip": "C\u002B\u002B23.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-14T07:40:18.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "C\u002B\u002B20.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B20.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B20.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B20.txt",
+              "RelativeToolTip": "C\u002B\u002B20.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-14T07:40:14.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "C\u002B\u002B17.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B17.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B17.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B17.txt",
+              "RelativeToolTip": "C\u002B\u002B17.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-14T07:40:08.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -39,15 +129,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "2DArray.cpp",
-              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\2DArray.cpp",
-              "RelativeDocumentMoniker": "2DArray.cpp",
-              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\2DArray.cpp",
-              "RelativeToolTip": "2DArray.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "C\u002B\u002B14.txt",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B14.txt",
+              "RelativeDocumentMoniker": "C\u002B\u002B14.txt",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\C\u002B\u002B14.txt",
+              "RelativeToolTip": "C\u002B\u002B14.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-14T07:39:50.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnicodeString.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\UnicodeString.cpp",
+              "RelativeDocumentMoniker": "UnicodeString.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\UnicodeString.cpp",
+              "RelativeToolTip": "UnicodeString.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-11T10:05:35.48Z",
+              "WhenOpened": "2026-01-14T07:15:03.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LongLong.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\LongLong.cpp",
+              "RelativeDocumentMoniker": "LongLong.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\LongLong.cpp",
+              "RelativeToolTip": "LongLong.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T07:13:27.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OverrideFinal.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\OverrideFinal.cpp",
+              "RelativeDocumentMoniker": "OverrideFinal.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\OverrideFinal.cpp",
+              "RelativeToolTip": "OverrideFinal.cpp",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T07:09:34.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InheritingConstructors.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\InheritingConstructors.cpp",
+              "RelativeDocumentMoniker": "InheritingConstructors.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\InheritingConstructors.cpp",
+              "RelativeToolTip": "InheritingConstructors.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T07:08:28.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DelegatingConstructors.cpp",
+              "DocumentMoniker": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\DelegatingConstructors.cpp",
+              "RelativeDocumentMoniker": "DelegatingConstructors.cpp",
+              "ToolTip": "E:\\Git_Sync_Code\\CPP\\CPP\\C_CPP_All_Programs\\DelegatingConstructors.cpp",
+              "RelativeToolTip": "DelegatingConstructors.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-14T07:06:09.176Z",
               "EditorCaption": ""
             }
           ]

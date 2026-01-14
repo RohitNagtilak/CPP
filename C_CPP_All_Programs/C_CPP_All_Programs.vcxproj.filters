@@ -240,9 +240,6 @@
     <ClCompile Include="2DArray.cpp">
       <Filter>Source Files\Array</Filter>
     </ClCompile>
-    <ClCompile Include="Lambdas.cpp">
-      <Filter>Source Files\OtherFeatures</Filter>
-    </ClCompile>
     <ClCompile Include="CallByValueRefNPtr.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
@@ -351,9 +348,6 @@
     <ClCompile Include="RTTI.cpp">
       <Filter>Source Files\OtherFeatures</Filter>
     </ClCompile>
-    <ClCompile Include="NULL_VS_nullptr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="auto.cpp">
       <Filter>Source Files\C++Versions\C++11</Filter>
     </ClCompile>
@@ -365,6 +359,51 @@
     </ClCompile>
     <ClCompile Include="PointerVsReference.cpp">
       <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="UniformInitialization.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveConstructor.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveAssignment.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="NULL_VS_nullptr.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambdas.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="StronglyTypedEnums.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="VariadicTemplates.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="static_assert.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="constexpr.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="DeletedDefaulted.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="DelegatingConstructors.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="InheritingConstructors.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="OverrideFinal.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="LongLong.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="UnicodeString.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +421,9 @@
     </Text>
     <Text Include="C++23.txt">
       <Filter>Source Files\C++Versions\C++23</Filter>
+    </Text>
+    <Text Include="LRValueMoveSemantics.txt">
+      <Filter>Source Files\C++Versions\C++11</Filter>
     </Text>
   </ItemGroup>
 </Project>

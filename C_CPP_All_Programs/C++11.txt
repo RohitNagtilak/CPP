@@ -3,21 +3,21 @@
 	✅ auto
 	✅ decltype
 	✅ Range-based for loop
-	Rvalue references (T&&)
-	Move semantics
-	Uniform initialization {}
-	nullptr
-	Strongly-typed enums (enum class)
-	Lambda expressions
-	Variadic templates
-	static_assert
-	constexpr
-	Deleted/defaulted functions (= delete, = default)
-	Delegating constructors
-	Inheriting constructors
-	override, final
-	Long long (long long int)
-	Unicode string literals (u8, u, U, L)
+	✅ Rvalue references (T&&)
+	✅ Move semantics
+	✅ Uniform initialization {}
+	✅ nullptr
+	✅ Lambda expressions
+	✅ Strongly-typed enums (enum class)
+	✅ Variadic templates
+	✅ static_assert
+	✅ constexpr
+	✅ Deleted/defaulted functions (= delete, = default)
+	✅ Delegating constructors
+	✅ Inheriting constructors
+	✅ override, final
+	✅ Long long (long long int)
+	✅ Unicode string literals (u8, u, U, L)
 
 Library
 =========================================================================================================
