@@ -36,6 +36,7 @@ int main()
         free(arr1); // Free the original memory block
         return 1;
     }
+
     for (int i = n; i < m; i++)
         arr3[i] = i + 1;
 

@@ -1,0 +1,21 @@
+﻿======================================================================================================
+     Declaration               Pointer changeable  Value changeable 
+    ======================================================================
+     int* ptr                      ✅ Yes             ✅ Yes
+     int * const ptr               ❌ No              ✅ Yes   
+     const int *ptr                ✅ Yes             ❌ No                  
+     const int * const ptr         ❌ No              ❌ No           
+     const int ptr                  N/A               ❌ No    
+   ======================================================================
+    #include <iostream>
+    using namespace std;
+    int main() 
+    {
+        int* arr = new int[0];
+        cout << arr << endl; // Prints some address (non-null in most compilers)
+        delete[] arr;
+	    return 0;
+    }
+    ======================================================================
+
+======================================================================================================

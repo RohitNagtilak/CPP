@@ -27,5 +27,6 @@ int main()
 
 	Child c;
 	cout << " K from child is " << c.k << endl;
+
 	return 0;
 }

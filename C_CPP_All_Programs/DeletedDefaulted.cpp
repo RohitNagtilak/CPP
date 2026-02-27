@@ -1,14 +1,15 @@
 ﻿/*
-Deleted & Defaulted Functions – C++11:
-=delete explicitly disables unwanted functions (like copy or default construction).
-=default tells the compiler to generate the default implementation.
-They improve code clarity, correctness, and intent expression.
+    `= delete` explicitly disables unwanted functions (like copy or default construction).
+    `= default` tells the compiler to generate the default implementation.
+
+    They improve code clarity, correctness, and intent expression.
 */
 
 #include <iostream>
 using namespace std;
 
-class Test {
+class Test 
+{
 public:
     int x;
 
@@ -23,7 +24,8 @@ public:
     Test& operator=(Test&&) = default; // enable move assignment
 };
 
-int main() {
+int main() 
+{
     Test a(10);
 
     // Test b(a);        // ❌ copy constructor deleted
@@ -31,5 +33,6 @@ int main() {
 
     Test c(std::move(a));  // move allowed
     cout << "Program compiled successfully\n";
+
     return 0;
 }

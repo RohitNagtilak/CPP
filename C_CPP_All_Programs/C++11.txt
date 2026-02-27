@@ -21,13 +21,22 @@
 
 Library
 =========================================================================================================
-	Smart pointers: unique_ptr, shared_ptr, weak_ptr
-	Thread library: std::thread, std::mutex, std::lock_guard, std::unique_lock, std::condition_variable
-	std::async, std::future, std::promise
-	std::atomic
-	<chrono>
-	<regex>
+	✅ Smart pointers: unique_ptr, shared_ptr, weak_ptr
+
+	Thread library:
+	✅ std::thread
+	✅ std::mutex
+	✅ std::lock_guard
+	✅ std::condition_variable
+	✅ std::async
+	✅ std::future
+	✅ std::promise
+	✅ std::unique_lock
+	✅ std::atomic
+	✅ <chrono>
+	✅ New containers: std::array, std::forward_list, unordered_map/set
+	✅ Tuples
+	✅ std::function, std::bind
 	<random>
-	New containers: std::array, std::forward_list, unordered_map/set
-	Tuples
-	std::function, std::bind
+	<regex>
+

@@ -1,31 +1,42 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+#include <vector>
+#include <stdexcept>
+
 int main()
 {
-	int n, i;
-	int* ptr = NULL;
-	cout << "\n Enter Size :";
-	cin >> n;
-	try
-	{
-		if (n <= 0)
-			throw "\n Exception: Bad Memory Allocation..!\n";
+    std::cout << "\nEnter Size: ";
+    int n;
+    if (!(std::cin >> n))
+    {
+        std::cerr << "Input error reading size.\n";
+        return 1;
+    }
 
-		ptr = new int[n];
-		cout << "\n Enter values";
-		for (i = 0; i < n; i++)
-			cin >> ptr[i];
-		cout << "\n Values Are :\n";
-		for (i = 0; i < n; i++)
-			cout << " " << ptr[i];
+    try
+    {
+        if (n <= 0)
+            throw std::invalid_argument("Exception: Bad Memory Allocation - size must be > 0.");
 
-		delete[] ptr;
-	}
-	catch (const char* str)
-	{
-		cout << " " << str;
-		if (ptr)
-			delete[]ptr;
-	}
-	return 0;
+        std::vector<int> values;
+        values.reserve(n);
+        std::cout << "\nEnter valus:\n";
+        for (int i = 0; i < n; ++i)
+        {
+            int v;
+            if (!(std::cin >> v))
+                throw std::runtime_error("Input error reading values.");
+            values.push_back(v);
+        }
+
+        std::cout << "\nValues Are:\n";
+        for (int v : values)
+            std::cout << ' ' << v;
+        std::cout << '\n';
+    }
+    catch (const std::exception& ex)
+    {
+        std::cerr << ex.what() << '\n';
+    }
+
+    return 0;
 }

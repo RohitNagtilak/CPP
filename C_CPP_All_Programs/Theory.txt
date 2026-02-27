@@ -1,0 +1,62 @@
+﻿Evaluation Order of Function Parameters in C++
+===============================================
+	Before C++17:
+		The order of evaluation of function parameters was unspecified.
+		The compiler could evaluate arguments left-to-right, right-to-left, or in any order, which could lead to unexpected behavior.
+
+	C++17 and later:
+		The function arguments are evaluated from left to right.
+		This ensures predictable evaluation order for function calls.
+
+	Example (C++17):
+	#include <iostream>
+	int f(int x, int y) { return x + y; }
+	int main() 
+	{
+		int a = 1, b = 2;
+		std::cout << f(a++, b++); // a++ evaluated first, then b++
+	}
+
+Construction Order of Global Variables
+======================================
+1. Within a single translation unit (source file):
+	Global (and namespace-scope) variables are constructed in the order they are defined in the file.
+	Example:
+	#include <iostream>
+	int a = 5;          // Constructed first
+	int b = a + 1;      // Constructed second, after 'a'
+
+2. Across multiple translation units (different source files):
+	The order of construction is unspecified.
+	This can lead to the static initialization order problem if one global variable in file A depends on a global variable in file B.
+
+3. Solution / Best Practice:
+	To ensure proper initialization order across files, use function-local static variables (initialized on first use):
+	int& getX() {
+		static int x = 10; // Guaranteed to initialize before first use
+		return x;
+	}
+
+4. Destruction Order:
+	Global variables are destroyed in the reverse order of their construction within each translation unit.
+	Across multiple translation units, destruction order is also unspecified.
+
+Constructor and Destructor Order in Inheritance
+===============================================
+	Construction Order (when creating a derived object):
+		Base class constructor → first
+		Member variables of derived class → second, in declaration order
+		Derived class constructor body → last
+
+	Destruction Order (when object goes out of scope):
+		Derived class destructor body → first
+		Member variables of derived class → next
+		Base class destructor → last
+
+Is it possible to call a virtual function inside of a constructor/destructor?
+=========================================================================================
+	Yes, it is possible to call a virtual function inside a constructor or destructor.
+	However: 
+	During construction or destruction, the dynamic type is the current class being constructed or destroyed, not the derived class.
+	This means virtual dispatch does not work as usual — the base class version of the function is called.
+

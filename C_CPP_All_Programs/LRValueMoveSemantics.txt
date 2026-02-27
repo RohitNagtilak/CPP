@@ -1,12 +1,18 @@
 ﻿lvalue
 =======
-	An lvalue is an expression that has a name, refers to a persistent memory location, and can appear on the left-hand side of an assignment.
+
+	An lvalue is an expression that has a name, refers to a persistent memory location, 
+	and can appear on the left-hand side of an assignment.
+	
 	int x = 10;   // x is lvalue
 	x = 20;      // valid
 
 rvalue
 =======
-	An rvalue is a temporary object that has no persistent memory location and cannot appear on the left-hand side of an assignment.
+
+	An rvalue is a temporary object that has no persistent memory location and
+	cannot appear on the left-hand side of an assignment.
+	
 	int y = 10 + 5;   // (10 + 5) is rvalue
 
  lvalue vs rvalue references
@@ -29,7 +35,9 @@ Code
 Move semantics
 ==============
 	
-	Move semantics allows transfer of ownership of resources (heap memory, file handles, sockets) from a temporary object instead of copying them.
+	Move semantics allows transfer of ownership of resources (heap memory, file handles, sockets) 
+	from a temporary object instead of copying them.
+	
 	Copy = duplicate
 	Move = transfer
 
@@ -65,7 +73,15 @@ If your class manages resources, implement:
 			Test(Test&&);                       // move ctor
 			Test& operator=(Test&&);            // move assign
 	};
+	
+Rule of Three
+-----------------
+	Destructor
+	Copy Constructor
+	Copy Assignment Operator
 
+Rule of Three → If you manage resources manually, implement all three special member functions.
+Rule of Zero → Avoid manual resource management; rely on RAII types so you implement none.
 
 One-Page Summary
 =================

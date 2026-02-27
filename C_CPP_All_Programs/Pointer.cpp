@@ -1,25 +1,24 @@
-#include<iostream>
-using namespace std;
+#include <iostream>
+
 int main()
 {
-	int* a;
-	int** c;
+    int a = 20;
+    int* b = nullptr;
+    int** c = nullptr;
 
-	int b = 20;
+    b = &a;
+    c = &b;
 
-	a = &b;
-	c = &a;
+    std::cout << "*b = " << *b << '\n';                         // 20
+    std::cout << "b = " << static_cast<void*>(b) << '\n';       // address of a
+    std::cout << "&b = " << static_cast<void*>(&b) << '\n';     // address of b
 
-	cout << "*a = " << *a << endl;
-	cout << "a = " << a << endl;
-	cout << "&a = " << &a << endl;
+    std::cout << "a = " << a << '\n';                           // 20
+    std::cout << "&a = " << static_cast<void*>(&a) << '\n';     // address of a
 
-	cout << "b = " << b << endl;
-	cout << "&b = " << &b << endl;
+    std::cout << "c = " << static_cast<void*>(c) << '\n';       // address of b
+    std::cout << "*c = " << static_cast<void*>(*c) << '\n';     // address of a
+    std::cout << "**c = " << **c << '\n';                       // 20
 
-	cout << "c = " << c << endl;
-	cout << "*c = " << *c << endl;
-	cout << "**c = " << **c << endl;
-
-	return 0;
+    return 0;
 }

@@ -33,7 +33,7 @@ void func(Node* ptr)
 
 int main() 
 {
-    func(NULL);    // Error: ambiguous call in C++11 and later
+    func(NULL);    // Error: ambiguous call in C++11 and latera
     func(nullptr);    // Calls func(Node*), unambiguous
 
     return 0;

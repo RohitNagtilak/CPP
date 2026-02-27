@@ -1,0 +1,154 @@
+﻿Two Modes of Execution of a Thread Function
+==============================================
+	Synchronous (Joinable) Execution
+	--------------------------------
+		The main thread waits for the thread to finish using join().
+		Thread execution completes before the program continues past join().
+
+	Asynchronous (Detached) Execution
+	---------------------------------
+		The thread runs independently of the main thread using detach().
+		The main thread does not wait for it; the thread cleans up automatically when finished.
+
+	----------
+	join()   → synchronous, wait for thread.
+	----------
+	detach() → asynchronous, runs independently.
+	----------
+
+C++ Features to Protect Data Between Multiple Threads [Synchronizing Data Between Threads]
+===================================================================================================================
+	Mutex (std::mutex)
+	-------------------
+		- Locks a resource so that only one thread can access it at a time.
+		- Prevents data races.
+
+	Lock Guards (std::lock_guard / std::unique_lock)
+	-------------------------------------------------
+		- Automatically locks a mutex when created and releases it when going out of scope.
+		- Safer than manually calling lock()/unlock().
+
+	Atomic Types (std::atomic)
+	---------------------------
+		- Provides atomic operations on variables without needing a mutex.
+		- Useful for counters, flags, or simple shared data.
+
+	Condition Variables (std::condition_variable)
+	-----------------------------------------------
+		- Used for thread synchronization: one thread waits until another signals it.
+
+	Key:
+	----
+		Use mutex + lock_guard for general protection.
+		Use atomic for simple variables.
+		Use condition_variable for signaling between threads.
+
+
+Thread vs Async (Easy Version)
+================================
+1. std::thread → manual thread
+	- You create a thread, must join() or detach().
+	- No direct return value.
+	- Always runs asynchronously.
+
+2. std::async → task-based async
+	- Returns a future automatically.
+	- Can run async or deferred.
+	- Handles synchronization automatically.
+
+Quick Tip:
+	Think of std::thread = low-level thread control
+	Think of std::async = easy “future task” execution ✅
+
+What does co_yield do?
+==========================
+	- co_yield is used in a coroutine to produce a value and suspend execution.
+	- The coroutine does not finish; it can be resumed later and continue from the next line.
+	- It is mainly used to implement generators that return values one by one.
+
+Difference between sleep_for and sleep_until
+=============================================
+sleep_for
+---------
+	- Suspends the current thread for a relative time duration.
+	- You specify how long the thread should sleep.
+	- Example: sleep for 2 seconds.
+	- std::this_thread::sleep_for(std::chrono::seconds(2)); // sleep 2 seconds
+
+sleep_until
+------------
+	- Suspends the current thread until a specific time point.
+	- You specify when the thread should wake up.
+	- Example: sleep until 10:00 AM
+	- auto t = std::chrono::steady_clock::now() + std::chrono::seconds(2);
+	  std::this_thread::sleep_until(t); // sleep until that time
+
+sleep_for waits for a duration, while sleep_until waits until a specific time point.
+
+Check Available Threads in C++
+================================
+	What it does:
+		Returns the number of hardware threads (CPU cores) available for parallel work.
+		Helps decide how many threads to create.
+		May return 0 if unknown.
+
+	std::thread::hardware_concurrency();
+	
+	Returns a hint for max parallel threads, not a strict guarantee.
+
+Securely acquiring two mutexes
+===============================
+	Use std::lock(m1, m2) to lock both mutexes at once without deadlock.
+	Then use std::lock_guard with std::adopt_lock to manage them safely.
+	Key: Never lock mutexes separately in different orders — it can cause deadlocks.
+
+Does multithreading always improve performance?
+=================================================
+	No. Multithreading may not help if:
+	- Tasks are small → thread overhead dominates
+	- Threads share data → synchronization slows them
+	- CPU cores are limited → context switching overhead
+	Helps only when tasks are heavy, independent, and enough CPU cores are available.
+
+	Multithreading improves performance only for independent, heavy tasks with enough CPU cores; otherwise, it may slow things down.
+
+Alternatives to std::mutex
+============================
+	1. std::atomic
+		For single variables (int, bool, pointers).
+		Provides lock-free thread-safe operations.
+		Example: std::atomic<int> counter;
+
+	2. Read-Write Locks (std::shared_mutex)
+		Allows multiple readers or one writer.
+		More efficient than mutex when reads are frequent.
+
+	3. Lock-free data structures
+		Queues, stacks implemented with atomic operations.
+		Avoids mutex overhead completely.
+
+	4. std::call_once
+		Ensures a function executes only once safely across threads.
+
+	5. Message Passing / Queues
+		Threads communicate via thread-safe queues instead of sharing data.
+
+	Alternatives to mutex include std::atomic for single variables, 
+	std::shared_mutex for read-heavy access, lock-free structures, and message passing.
+
+Race Condition
+===============
+	- A race condition occurs when two or more threads access shared data simultaneously,
+	and at least one thread modifies it.
+	- The final result depends on the timing/order of thread execution.
+	- Can cause unexpected behavior, crashes, or data corruption
+
+Coroutines in C++
+==================
+	- A coroutine is a special function that can be suspended and resumed.
+	- Unlike a normal function, it does not have to finish execution when returning a value.
+	- Useful for asynchronous tasks, generators, or lazy computations.
+
+	Coroutines are functions that can suspend execution and resume later, 
+	used for asynchronous tasks or generators.
+

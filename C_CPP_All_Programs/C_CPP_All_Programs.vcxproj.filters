@@ -88,6 +88,9 @@
     <Filter Include="Source Files\Other">
       <UniqueIdentifier>{14e46b82-f48a-4907-8c4c-9a54b4afb0b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Const">
+      <UniqueIdentifier>{24cdddfb-2de4-40c8-a7d7-d15fb3b8de91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Single.cpp">
@@ -135,10 +138,10 @@
     <ClCompile Include="PureVirtualFunction.cpp">
       <Filter>Source Files\Function_Overriding</Filter>
     </ClCompile>
-    <ClCompile Include="Function.cpp">
+    <ClCompile Include="FunctionOverloading.cpp">
       <Filter>Source Files\Overloading</Filter>
     </ClCompile>
-    <ClCompile Include="Operator.cpp">
+    <ClCompile Include="OperatorOverloading.cpp">
       <Filter>Source Files\Overloading</Filter>
     </ClCompile>
     <ClCompile Include="FriendClass.cpp">
@@ -294,19 +297,16 @@
     <ClCompile Include="Exception.cpp">
       <Filter>Source Files\ExceptionHandling</Filter>
     </ClCompile>
-    <ClCompile Include="Class.cpp">
+    <ClCompile Include="TemplateClass.cpp">
       <Filter>Source Files\Template</Filter>
     </ClCompile>
-    <ClCompile Include="TFunction.cpp">
+    <ClCompile Include="TemplateFunction.cpp">
       <Filter>Source Files\Template</Filter>
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DiningPhilosophers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ProducerConsumer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DLL.cpp">
@@ -405,6 +405,69 @@
     <ClCompile Include="UnicodeString.cpp">
       <Filter>Source Files\C++Versions\C++11</Filter>
     </ClCompile>
+    <ClCompile Include="atomic.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="atomic_ref.cpp">
+      <Filter>Source Files\C++Versions\C++20</Filter>
+    </ClCompile>
+    <ClCompile Include="chrono.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="NewContainers.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="functionBind.cpp">
+      <Filter>Source Files\C++Versions\C++11</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateSpecialization.cpp">
+      <Filter>Source Files\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptioninConstructor.cpp">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.txt">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCQ.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="AMCQ2.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadVsAsync.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="ProducerConsumer.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="CallOnceFlag.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="packaged_task.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionFromAThread.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="jthread.cpp">
+      <Filter>Source Files\Multithreading</Filter>
+    </ClCompile>
+    <ClCompile Include="constpointer.txt">
+      <Filter>Source Files\Const</Filter>
+    </ClCompile>
+    <ClCompile Include="DiamondProbConstructorCalling.cpp">
+      <Filter>Source Files\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\ThrowCtorDtor.cpp">
+      <Filter>Source Files\ExceptionHandling</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="C++11.txt">
@@ -424,6 +487,12 @@
     </Text>
     <Text Include="LRValueMoveSemantics.txt">
       <Filter>Source Files\C++Versions\C++11</Filter>
+    </Text>
+    <Text Include="DynamicMemory.txt">
+      <Filter>Source Files\DyanamicMemory</Filter>
+    </Text>
+    <Text Include="Theory.txt">
+      <Filter>Source Files\Other</Filter>
     </Text>
   </ItemGroup>
 </Project>

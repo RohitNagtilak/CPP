@@ -1,4 +1,4 @@
-Core Language
+﻿Core Language
 =========================================================================================================
 	Concepts (concept, requires)
 	Ranges (views::filter, views::transform, etc.)
@@ -24,4 +24,4 @@ Library
 	std::jthread
 	std::stop_token
 	Calendar/timezone library
-	std::atomic_ref
+	✅ std::atomic_ref

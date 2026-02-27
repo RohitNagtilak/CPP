@@ -11,11 +11,14 @@ int main()
 	int a = 10;
 
 	cout << "Before A = " << a << endl;
+	
 	auto Fun = [&]()
 	{
 		a = a + 10;
 	};
+
 	Fun();
+	
 	cout << "After  A = " << a << endl;
 
 	return 0;

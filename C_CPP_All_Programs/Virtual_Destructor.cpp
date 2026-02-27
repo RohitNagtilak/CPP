@@ -1,34 +1,37 @@
 #include <iostream>
-using namespace std;
+
 class Parent
 {
 public:
-	Parent()
-	{
-		cout << "Parent Constructor Called" << endl;
-	}
-	virtual ~Parent() //if we don't make virtual then child destructor will not called.
-	{
-		cout << "Parent Destructor Called." << endl;
-	}
+    Parent()
+    {
+        std::cout << "Parent Constructor Called" << std::endl;
+    }
+
+    // Virtual destructor is required for polymorphic deletion
+    virtual ~Parent()
+    {
+        std::cout << "Parent Destructor Called" << std::endl;
+    }
 };
 
-class Child :public Parent
+class Child : public Parent
 {
 public:
-	Child()
-	{
-		cout << "Child Constructor Called." << endl;
-	}
-	~Child()
-	{
-		cout << "Child Destructor Called." << endl;
-	}
+    Child()
+    {
+        std::cout << "Child Constructor Called" << std::endl;
+    }
+
+    ~Child() override   // override is good practice
+    {
+        std::cout << "Child Destructor Called" << std::endl;
+    }
 };
 
 int main()
 {
-	Parent* p = new Child();
-	delete p;
-	return 0;
+    Parent* p = new Child();   // Base pointer to derived object
+    delete p;                  // Correctly calls Child then Parent destructor
+    return 0;
 }

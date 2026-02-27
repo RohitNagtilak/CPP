@@ -1,7 +1,6 @@
 /*
-constexpr – C++11:
-constexpr allows compile-time evaluation of values and functions.
-It improves performance and ensures constants are known at compile time.
+    constexpr allows compile-time evaluation of values and functions.
+    It improves performance and ensures constants are known at compile time.
 */
 
 #include <iostream>

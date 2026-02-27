@@ -1,0 +1,34 @@
+﻿
+Difference between new/malloc or delete/free?
+==============================================
+	new and delete are C++ operators used to allocate and free memory. They call constructors and destructors, and return a typed pointer.
+	malloc and free are C functions that allocate and free memory. They do not call constructors, return a void pointer, and require explicit type casting.
+	On allocation failure, new throws an exception, while malloc returns NULL
+
+Difference between new and new[]? Is it possible to delete memory using delete[] allocated within the new operator?
+=======================================================================================================================
+	new allocates a single object; new[] allocates an array of objects.
+	Use delete for memory from new and delete[] for memory from new[].
+	Do not mix them—using the wrong form causes undefined behavior.
+
+Difference between Stack and Heap Allocation
+=============================================
+	Stack Allocation:
+	-----------------
+		Memory is allocated automatically when a function is called.
+		Stores local variables and function call info.
+		Fast allocation and deallocation.
+		Memory size is limited.
+		Lifetime ends when the function returns.
+
+	Heap Allocation:
+	----------------
+		Memory is allocated manually using new or malloc.
+		Stores dynamic data.
+		Slower allocation and deallocation.
+		Memory size is larger, limited by system memory.
+		Lifetime lasts until explicitly freed using delete or free.
+
+	Stack → automatic, fast, limited, short-lived.
+	Heap → manual, slower, large, long-lived.
+

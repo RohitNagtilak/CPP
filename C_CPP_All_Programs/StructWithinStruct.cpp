@@ -11,11 +11,14 @@ struct  Date
 struct Student
 {
 	Date dob;
+
 	string name{""};
+	
 	void display()
 	{
 		cout << " Name " << name << " " <<"Dob DD/MM/YY: "<<dob.dd<<"/"<<dob.mm<<"/"<<dob.yy<<endl;
 	}
+
 };
 
 int main()
@@ -27,4 +30,5 @@ int main()
 	std.name = "Rohit";
 	std.display();
 
+	return 0;
 }

@@ -9,15 +9,18 @@ public:
 	{
 		cout << "Default Constructor Called. X = " << x << endl;
 	}
+
 	~Simple()
 	{
 		cout << "Destructor Called." << endl;
 	}
+
 	Simple(int x)
 	{
 		this->x = x;
 		cout << "Parameterized Constructor Called. X = " << x << endl;
 	}
+
 	//Shallow Copy constructor
 	Simple(Simple& temp)
 	{

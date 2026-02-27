@@ -1,4 +1,6 @@
 #include<iostream>
+// Header vs namespace: `#include <iostream>` brings declarations (like `std::cout`) from the standard library header;
+// the `std` namespace is the scope that contains those names, and `using namespace std;` lets you use them unqualified.
 using namespace std;
 namespace s1 
 {

@@ -1,7 +1,9 @@
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
+
 using namespace std;
+
 int main()
 {
 	//string str;
@@ -14,9 +16,9 @@ int main()
 		exit(0);
 	}
 
-	//writing string
-	//str="rohit";
-	//out.write(str, 10);
+	//	writing string
+	//	str = "rohit";
+	//	out.write(str, 10);
 
 
 	for (int i = 65; i <= 90; i++)
@@ -48,5 +50,6 @@ int main()
 		cout << " " << ch;
 
 	in.close();
+
 	return 0;
 }

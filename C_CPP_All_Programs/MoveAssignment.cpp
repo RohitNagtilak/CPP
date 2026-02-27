@@ -12,7 +12,8 @@ public:
     // Move assignment
     Test& operator=(Test&& t) noexcept 
     {
-        if (this != &t) {
+        if (this != &t)
+        {
             delete data;       // clean old resource
             data = t.data;    // steal
             t.data = nullptr;

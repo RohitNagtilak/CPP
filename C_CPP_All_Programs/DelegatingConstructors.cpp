@@ -1,8 +1,7 @@
 /*
-Delegating Constructors – C++11:
-Delegating constructors allow one constructor to call another constructor
-of the same class to reuse initialization logic and avoid code duplication.
-The delegated constructor must appear in the initializer list.
+    Delegating constructors allow one constructor to call another constructor
+    of the same class to reuse initialization logic and avoid code duplication.
+    The delegated constructor must appear in the initializer list.
 */
 
 #include <iostream>
@@ -37,5 +36,6 @@ int main()
     t1.print();
     t2.print();
     t3.print();
+
     return 0;
 }

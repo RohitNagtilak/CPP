@@ -1,52 +1,55 @@
 #include <iostream>
+#include <stdexcept>
 #include <string>
-using namespace std;
 
-void Display(int number)
+void riskyOperation(int choice) 
 {
-    if (number == 0)
-        throw 0;
-    else if (number > 0)
-        throw "some inappropriate value";
-    else
-        throw '\n';
+    if (choice == 1)
+    {
+        throw std::out_of_range("index out of range");
+    }
+    else if (choice == 2) 
+    {
+        throw std::invalid_argument("invalid argument provided");
+    }
+    else if (choice == 3) 
+    {
+        throw std::runtime_error("runtime error occurred");
+    }
+    else if (choice == 4) 
+    {
+        // throw a non-std exception type
+        throw 42;
+    }
+    // otherwise succeed
+    std::cout << "riskyOperation(" << choice << ") succeeded\n";
 }
 
-int main()
+int main() 
 {
-    int integerInput, operation;
-    char charInput;
-
-    try 
+    for (int i = 0; i <= 4; ++i)
     {
-        cout << "\n Enter 1 for integer or 0 for char: ";
-        cin >> operation;
-
-        if (operation == 1) 
+        std::cout << "---- Test " << i << " ----\n";
+        try 
         {
-            cout << "Enter an integer: ";
-            cin >> integerInput;
-            Display(integerInput);
+            riskyOperation(i);
         }
-        else 
+        catch (const std::out_of_range& e) 
         {
-            cout << "Enter a char: ";
-            cin >> charInput;
-            Display(charInput);
+            std::cout << "Caught std::out_of_range: " << e.what() << '\n';
+        }
+        catch (const std::invalid_argument& e)
+        {
+            std::cout << "Caught std::invalid_argument: " << e.what() << '\n';
+        }
+        catch (const std::exception& e) 
+        {
+            std::cout << "Caught std::exception (or derived): " << e.what() << '\n';
+        }
+        catch (...) 
+        {
+            std::cout << "Caught unknown exception (non-std)\n";
         }
     }
-    catch (int ex) 
-    {
-        cout << "\n EXCEPTION: Wrong Integer";
-    }
-    catch (char* ex) 
-    {
-        cout << "\n EXCEPTION: Wrong Char";
-    }
-    catch (...)
-    {
-        cout << "\n EXCEPTION: Wrong Data";
-    }
-
     return 0;
 }

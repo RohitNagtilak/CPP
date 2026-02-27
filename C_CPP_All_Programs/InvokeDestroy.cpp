@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <memory>
+
 using namespace std;
 
 class Test
@@ -17,10 +19,11 @@ public:
 int main()
 {
 	Test s;
-	
-	Test *s1 = new Test();
+
+	Test* s1 = new Test();
 	delete s1;
-	
-	unique_ptr<Test> s2(new Test());
+
+	//unique_ptr<Test> s2(new Test());
+	unique_ptr<Test> s2 = make_unique<Test>();
 	return 0;
 }

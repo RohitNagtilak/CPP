@@ -5,8 +5,9 @@ int main()
 {
     int arr[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
 
-    /*int* ptr;
-    ptr = &arr[0][0];*/
+    /* int* ptr;
+       ptr = &arr[0][0]; 
+    */
 
     //Way-1
     int* ptr = &arr[0][0];
@@ -40,5 +41,7 @@ int main()
         cout << " " << *ptr;
         ptr++;
     }
+    cout << endl;
+
     return 0;
 }

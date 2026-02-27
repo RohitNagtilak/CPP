@@ -19,5 +19,6 @@ int main()
 	*(q.data) = 30;
 	cout << "P -> Data= " << *(p.data) << endl;
 	cout << "Q -> Data= " << *(q.data) <<endl;
+
 	return 0;
 }

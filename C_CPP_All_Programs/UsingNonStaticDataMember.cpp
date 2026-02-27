@@ -1,6 +1,7 @@
 #include<iostream>
 #include<thread>
 using namespace std;
+
 class Sample
 {
 public:
@@ -10,6 +11,7 @@ public:
 			cout << " "<<i << endl;
 	}
 };
+
 int main()
 {
 	Sample s1;

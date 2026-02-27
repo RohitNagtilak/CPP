@@ -19,10 +19,12 @@ public:
 		cout << "Destructor Called" << endl;
 	}
 };
+
 void Process(unique_ptr<Sample> obj)
 {
 	obj->Display();
 }
+
 int main()
 {
 	// Using std::make_unique

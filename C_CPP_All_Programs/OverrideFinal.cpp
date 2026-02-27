@@ -11,11 +11,13 @@ using namespace std;
 class Base 
 {
 public:
-    virtual void show() {
+    virtual void show()
+    {
         cout << "Base show\n";
     }
 
-    virtual void process() final {   // cannot be overridden
+    virtual void process() final
+    {   // cannot be overridden
         cout << "Base process\n";
     }
 };

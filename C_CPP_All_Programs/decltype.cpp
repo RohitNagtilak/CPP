@@ -1,3 +1,7 @@
+//`auto` tells the compiler to deduce the type from the initializer or return value; simple and convenient, but may drop references or `const`.
+//`decltype` gives the exact type of an expression without evaluating it, preserving references and `const`.
+//Use `auto` for easy type deduction; use `decltype` when you need the precise type, especially in templates or complex expressions.
+
 #include<iostream>
 using namespace std;
 

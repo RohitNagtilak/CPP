@@ -14,6 +14,7 @@ union Student
 {
 	string *name = NULL;
 	int age;
+
 };
 
 int main()
@@ -24,6 +25,7 @@ int main()
 
     s.name = new string("Rohit");
 	cout << "Name of student is : " << *(s.name)<<endl;
+	
 	delete s.name;
 	
 	return 0;
