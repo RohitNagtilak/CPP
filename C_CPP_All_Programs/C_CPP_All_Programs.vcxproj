@@ -712,6 +712,7 @@
     <Text Include="C++23.txt" />
     <Text Include="DynamicMemory.txt" />
     <Text Include="LRValueMoveSemantics.txt" />
+    <Text Include="RegularExpressions(RegEx).txt" />
     <Text Include="Theory.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -494,5 +494,8 @@
     <Text Include="Theory.txt">
       <Filter>Source Files\Other</Filter>
     </Text>
+    <Text Include="RegularExpressions(RegEx).txt">
+      <Filter>Source Files\Other</Filter>
+    </Text>
   </ItemGroup>
 </Project>

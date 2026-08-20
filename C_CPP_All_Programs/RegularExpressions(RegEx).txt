@@ -1,0 +1,122 @@
+Regular Expressions (RegEx):
+----------------------------
+ Regular expressions are sequences of characters that define a search pattern.
+ They can be used for pattern matching within strings.
+
+ C++ APIs:
+ ---------
+ std::regex:          Represents a regular expression object.
+ std::regex_match:    Matches an entire string against a regular expression.
+ std::regex_search:   Searches for a regex pattern within a string.
+ std::regex_replace:  Replaces matches of a regex pattern within a string.
+ std::regex_iterator: Iterates through matches in a string.
+ std::smatch:         A type to store matched results.
+
+ E.g. 
+ #include <iostream>
+ #include <regex>
+ #include <string>
+ int main() 
+ {
+     // Text to perform regex operations on
+     std::string text = "The cat and the hat sat on the mat.";
+ 
+     // Regular expression patterns
+     std::regex pattern_word("cat"); // Pattern to match the word "cat"
+     std::regex pattern_vowels("[aeiou]"); // Pattern to match any vowel
+ 
+     // 1. std::regex_match - Match entire string against a regex pattern
+     bool is_match = std::regex_match(text, pattern_word);
+     std::cout << "Match entire string against 'cat': " << (is_match ? "Yes" : "No") << std::endl;
+ 
+     // 2. std::regex_search - Search for regex pattern within a string
+     std::smatch matches;
+     if (std::regex_search(text, matches, pattern_word))
+     {
+         std::cout << "Found 'cat' at index " << matches.position() << std::endl;
+     } 
+     else
+     {
+         std::cout << "No 'cat' found." << std::endl;
+     }
+
+     // 3. std::regex_replace - Replace matches of a regex pattern within a string
+     std::string replaced_text = std::regex_replace(text, pattern_word, "dog");
+     std::cout << "Text after replacing 'cat' with 'dog': " << replaced_text << std::endl;
+ 
+     // 4. std::regex_iterator - Iterate through matches in a string
+     std::regex_iterator<std::string::iterator> iter(text.begin(), text.end(), pattern_vowels);
+     std::regex_iterator<std::string::iterator> end;
+     int vowel_count = 0;
+     while (iter != end)
+     {
+         std::cout << "Vowel found at index " << iter->position() << ": " << iter->str() << std::endl;
+         ++vowel_count;
+         ++iter;
+     }
+     std::cout << "Total vowels found: " << vowel_count << std::endl;
+
+     return 0;
+ }
+
+--------------------
+std::smatch:
+=============
+ std::smatch is a specialized container that holds information about matched results from a regular expression search.
+ When a regular expression search (e.g., std::regex_search) is performed, std::smatch is often used to store these results.
+
+ #include <iostream>
+ #include <regex>
+ #include <string>
+
+ int main() 
+ {
+     std::string text = "The cat and the hat sat on the mat.";
+     std::regex pattern("([a-z]+)at"); // Matches words ending with "at"
+
+     std::smatch matches;
+
+     // Perform regex search
+     if (std::regex_search(text, matches, pattern)) {
+         std::cout << "Matched words ending with 'at':" << std::endl;
+
+         // Access match information using various APIs
+         for (size_t i = 0; i < matches.size(); ++i) {
+             std::cout << "Match " << i << ": " << matches[i] << std::endl;
+             std::cout << "Match " << i << " position: " << matches.position(i) << std::endl;
+             std::cout << "Match " << i << " length: " << matches.length(i) << std::endl;
+         }
+
+         std::cout << "Entire match: " << matches.str() << std::endl;
+         std::cout << "Match starting position: " << matches.position() << std::endl;
+         std::cout << "Match length: " << matches.length() << std::endl;
+         std::cout << "Prefix: " << matches.prefix() << std::endl;
+         std::cout << "Suffix: " << matches.suffix() << std::endl;
+     } else {
+         std::cout << "No matches found." << std::endl;
+     }
+     return 0;
+ }
+
+Metacharacters: Special characters that represent classes of characters or behaviors:
+-------------------------------------------------------------------------------------
+ . - Matches any single character except newline.
+ ^ - Matches the start of a line.
+ $ - Matches the end of a line.
+ * - Matches zero or more occurrences of the preceding character.
+ + - Matches one or more occurrences of the preceding character.
+ ? - Matches zero or one occurrence of the preceding character.
+ [] - Matches any single character inside the brackets.
+ () - Groups characters together.
+ | - Matches either the expression before or after the pipe symbol.
+ {} - Matches a specific number of occurrences.
+
+ \d+: Matches one or more digits (0-9).
+ \w+: Matches one or more word characters (alphanumeric characters and underscore).
+ \s+: Matches one or more whitespace characters (space, tab, newline, etc.).
+ [A-Z]+: Matches one or more uppercase letters from 'A' to 'Z'.
+ [0-9a-fA-F]+: Matches one or more hexadecimal digits (0-9, a-f, or A-F).
+ \b\w{4}\b: Matches exactly four word characters as a whole word (using word boundaries \b).
+ \S+@\S+\.\S+: Matches a basic email pattern (one or more non-whitespace characters, '@', one or more non-whitespace characters, '.', one or more non-  whitespace characters).
+ [aeiouAEIOU]+: Matches one or more vowels (both lowercase and uppercase).
+-------------------------------------------------------------------------------------
